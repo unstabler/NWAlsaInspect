@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NWAlsaInspect</string>
+    <string name="not_working">작동하지 않는 경우, 기기를 adb와 연결 후\nadb shell pm grant pl.unstabler.nwalsainspect android.permission.READ_LOGS\n명령을 내려 주십시오.</string>
+</resources>
