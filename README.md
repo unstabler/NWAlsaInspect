@@ -1,3 +1,5 @@
+[日本語はこちら](./README.ja.md)
+
 # NAME
 
 NWAlsaInspect - NW-A100Series (NW-A105, NW-A106)에서 사용 중인 앱이 Hi-Res 출력을 하고 있는지 확인할 수 있게 해줍니다.
