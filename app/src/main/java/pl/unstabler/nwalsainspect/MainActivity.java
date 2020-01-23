@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -12,6 +13,8 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     private TextView statusText;
+    private Button updateButton;
+
     private LogcatAlsaInspector logcatAlsaInspector = new LogcatAlsaInspector();
 
     @Override
@@ -19,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.statusText = (TextView) findViewById(R.id.statusText);
+        this.statusText = findViewById(R.id.statusText);
+        this.updateButton = findViewById(R.id.updateButton);
+
+        this.updateButton.setOnClickListener(v -> this.updateInspectionResult());
     }
 
     @Override
